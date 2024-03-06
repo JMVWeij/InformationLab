@@ -1,0 +1,5 @@
+SELECT email FROM data_table
+JOIN email_table ON data_table.join_id = email_table.join_id
+WHERE data_table.column_1 % 2 = 0 
+  AND data_table.column_2 < data_table.column_1 
+  AND data_table.column_3 LIKE '%1';
